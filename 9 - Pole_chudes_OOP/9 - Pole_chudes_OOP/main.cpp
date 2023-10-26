@@ -6,13 +6,13 @@
 class Game
 {
     public:
-    std::string glossary[];
     char letter;
+    std::string glossary[];
     char real_word[];
     char guess_word[];
     
-    void start(){
-        char real_word[]="wilow";
+    void start(char real_word[]){
+       // char real_word[]="wilow";
         int N = sizeof(real_word);
         char letter;
         
