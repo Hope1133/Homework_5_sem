@@ -1,8 +1,4 @@
 //
-//  main.cpp
-//  classwork
-//
-//  Created by Надежда Сороко on 22.09.2023.
 //
 
 #include <iostream>

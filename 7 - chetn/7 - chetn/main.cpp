@@ -112,7 +112,7 @@ int main() {
 
 #pragma optimize ("", on)
 
-// Нормальная программа
+// Нормальная программа (с функциями)
 
 /*
 #include <iostream>
