@@ -30,14 +30,13 @@ int main() {
     array6=(int*)malloc(n*sizeof(int));
     free(array6);
     //Создание структуры (обертка):
-    mas m;
-    int i;
-    m[i].number=i;
-    //
-    //std::vector<int, 5> array8;
-    //
-    //std::make_unique<int[]> array9;
-    //+make_shared
+    mas array7[5];
+    //Вектор:
+    std::vector<int> array8;
+    //std::unique_ptr — умный указатель, владеющий динамически выделенным ресурсом
+    std::unique_ptr<int> array9(new int);
+    //std::shared_ptr — умный указатель, владеющий разделяемым динамически выделенным ресурсом.
+    std::shared_ptr<int> array10(new int);
  return 0;
 }
 
