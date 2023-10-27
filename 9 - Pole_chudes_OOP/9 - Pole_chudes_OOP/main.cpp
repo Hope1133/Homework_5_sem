@@ -3,73 +3,83 @@
 #include <array>
 
 
+class Word
+{
+public:
+    std::string m_real;
+    std::string m_guess;
+    int search_letter_and_open(char letter){
+        int N = m_real.length();
+        int k=0;
+        for (int index = 0; index < N; index++){
+            if (m_real[index] == letter){
+                m_guess[index]=letter;
+                k++;
+            }
+        }
+        return k;
+    }
+    void set_m_guess(){
+        for (int i = 0; i < m_real.length(); i++){
+            m_guess[i] = '_';
+        }
+    }
+    void get_m_guess(){
+        for (int i = 0; i < m_real.length(); i++){
+            std::cout<<m_guess[i];
+        }
+        std::cout<<'\n';
+    }
+};
+
 class Game
 {
+    std::string m_glossary[7]={"willow", "friday", "winter", "autumn", "chess", "theater", "museum"};
+    Word m_word;
     public:
-    char letter;
-    std::string glossary[];
-    char real_word[];
-    char guess_word[];
+    char m_letter;
     
-    void start(char real_word[]){
-       // char real_word[]="wilow";
-        int N = sizeof(real_word);
-        char letter;
+    void start(){
+        srand(unsigned(time(0)));
+        m_word.m_real=m_glossary[rand()%7];
+        m_word.m_guess = m_word.m_real;
+//        int N = (m_word.m_real).length();
+        m_word.set_m_guess();
         
-        for (int i = 0; i < N-1; ++i){
-            guess_word[i] = '_';
-        }
-        std::cout<<"Отгадайте слово:"<<guess_word<<std::endl;
+        std::cout<<"Отгадайте слово: ";
+        m_word.get_m_guess();
      }
     
     void guessing(){
-        int k=0;
-        std::cout<<"Отгадайте слово:"<<guess_word<<std::endl;
-        while (strcmp(real_word, guess_word)){
+        int k;
+        while (m_word.m_real != m_word.m_guess){
             std::cout<<"Введите букву: "<<std::endl;
-            std::cin>>letter;
-            k=0;
-            for (int index = 0; index < N-1; ++index){
-                if (real_word[index] == letter){
-                    guess_word[index]=letter;
-                    k++;
-                }
-            }
+            std::cin>>m_letter;
+            k=m_word.search_letter_and_open(m_letter);
             if (k==0){
                     std::cout<<"Нет такой буквы!"<<std::endl;
-                    std::cout<<guess_word<<std::endl;
+                    m_word.get_m_guess();
                    // break;
                 }
             if (k>0){
                 std::cout<<"Угадали!"<<std::endl;
-                std::cout<<guess_word<<std::endl;
+                m_word.get_m_guess();
                 k=0;
                 //break;
                 }
             }
     }
-    
-    void output_of_the_guessed_word(){
-        std::cout<<guess_word<<std::endl;
-     }
-
-    void reading_the_letter(){
-
-    }
     void end(){
-        
+        std::cout<<"Вы угадали слово!"<<std::endl;
+        std::cout<<"Конец игры"<<std::endl;
     }
 };
-class Word
-{
-    std::string real;
-    std::string guessed;
-    void search_letter_and_open(){
-        
-    }
-}
+
 
 int main(){
-    
+    Game play;
+    play.start();
+    play.guessing();
+    play.end();
     return 0;
 }

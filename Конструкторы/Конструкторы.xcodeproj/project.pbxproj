@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F54FDAA22AEBE1E000285D84 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F54FDAA12AEBE1E000285D84 /* main.cpp */; };
+		F5445D472AEB8E65004ACF98 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5445D462AEB8E65004ACF98 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F54FDA9C2AEBE1E000285D84 /* CopyFiles */ = {
+		F5445D412AEB8E65004ACF98 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F54FDA9E2AEBE1E000285D84 /* Черновик */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Черновик"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F54FDAA12AEBE1E000285D84 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F5445D432AEB8E65004ACF98 /* Конструкторы */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Конструкторы"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5445D462AEB8E65004ACF98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F54FDA9B2AEBE1E000285D84 /* Frameworks */ = {
+		F5445D402AEB8E65004ACF98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F54FDA952AEBE1E000285D84 = {
+		F5445D3A2AEB8E65004ACF98 = {
 			isa = PBXGroup;
 			children = (
-				F54FDAA02AEBE1E000285D84 /* Черновик */,
-				F54FDA9F2AEBE1E000285D84 /* Products */,
+				F5445D452AEB8E65004ACF98 /* Конструкторы */,
+				F5445D442AEB8E65004ACF98 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F54FDA9F2AEBE1E000285D84 /* Products */ = {
+		F5445D442AEB8E65004ACF98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F54FDA9E2AEBE1E000285D84 /* Черновик */,
+				F5445D432AEB8E65004ACF98 /* Конструкторы */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F54FDAA02AEBE1E000285D84 /* Черновик */ = {
+		F5445D452AEB8E65004ACF98 /* Конструкторы */ = {
 			isa = PBXGroup;
 			children = (
-				F54FDAA12AEBE1E000285D84 /* main.cpp */,
+				F5445D462AEB8E65004ACF98 /* main.cpp */,
 			);
-			path = "Черновик";
+			path = "Конструкторы";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F54FDA9D2AEBE1E000285D84 /* Черновик */ = {
+		F5445D422AEB8E65004ACF98 /* Конструкторы */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F54FDAA52AEBE1E000285D84 /* Build configuration list for PBXNativeTarget "Черновик" */;
+			buildConfigurationList = F5445D4A2AEB8E65004ACF98 /* Build configuration list for PBXNativeTarget "Конструкторы" */;
 			buildPhases = (
-				F54FDA9A2AEBE1E000285D84 /* Sources */,
-				F54FDA9B2AEBE1E000285D84 /* Frameworks */,
-				F54FDA9C2AEBE1E000285D84 /* CopyFiles */,
+				F5445D3F2AEB8E65004ACF98 /* Sources */,
+				F5445D402AEB8E65004ACF98 /* Frameworks */,
+				F5445D412AEB8E65004ACF98 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Черновик";
-			productName = "Черновик";
-			productReference = F54FDA9E2AEBE1E000285D84 /* Черновик */;
+			name = "Конструкторы";
+			productName = "Конструкторы";
+			productReference = F5445D432AEB8E65004ACF98 /* Конструкторы */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F54FDA962AEBE1E000285D84 /* Project object */ = {
+		F5445D3B2AEB8E65004ACF98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					F54FDA9D2AEBE1E000285D84 = {
+					F5445D422AEB8E65004ACF98 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = F54FDA992AEBE1E000285D84 /* Build configuration list for PBXProject "Черновик" */;
+			buildConfigurationList = F5445D3E2AEB8E65004ACF98 /* Build configuration list for PBXProject "Конструкторы" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = F54FDA952AEBE1E000285D84;
-			productRefGroup = F54FDA9F2AEBE1E000285D84 /* Products */;
+			mainGroup = F5445D3A2AEB8E65004ACF98;
+			productRefGroup = F5445D442AEB8E65004ACF98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F54FDA9D2AEBE1E000285D84 /* Черновик */,
+				F5445D422AEB8E65004ACF98 /* Конструкторы */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F54FDA9A2AEBE1E000285D84 /* Sources */ = {
+		F5445D3F2AEB8E65004ACF98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54FDAA22AEBE1E000285D84 /* main.cpp in Sources */,
+				F5445D472AEB8E65004ACF98 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F54FDAA32AEBE1E000285D84 /* Debug */ = {
+		F5445D482AEB8E65004ACF98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +185,7 @@
 			};
 			name = Debug;
 		};
-		F54FDAA42AEBE1E000285D84 /* Release */ = {
+		F5445D492AEB8E65004ACF98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +237,7 @@
 			};
 			name = Release;
 		};
-		F54FDAA62AEBE1E000285D84 /* Debug */ = {
+		F5445D4B2AEB8E65004ACF98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -245,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		F54FDAA72AEBE1E000285D84 /* Release */ = {
+		F5445D4C2AEB8E65004ACF98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -256,25 +256,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F54FDA992AEBE1E000285D84 /* Build configuration list for PBXProject "Черновик" */ = {
+		F5445D3E2AEB8E65004ACF98 /* Build configuration list for PBXProject "Конструкторы" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F54FDAA32AEBE1E000285D84 /* Debug */,
-				F54FDAA42AEBE1E000285D84 /* Release */,
+				F5445D482AEB8E65004ACF98 /* Debug */,
+				F5445D492AEB8E65004ACF98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F54FDAA52AEBE1E000285D84 /* Build configuration list for PBXNativeTarget "Черновик" */ = {
+		F5445D4A2AEB8E65004ACF98 /* Build configuration list for PBXNativeTarget "Конструкторы" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F54FDAA62AEBE1E000285D84 /* Debug */,
-				F54FDAA72AEBE1E000285D84 /* Release */,
+				F5445D4B2AEB8E65004ACF98 /* Debug */,
+				F5445D4C2AEB8E65004ACF98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F54FDA962AEBE1E000285D84 /* Project object */;
+	rootObject = F5445D3B2AEB8E65004ACF98 /* Project object */;
 }
