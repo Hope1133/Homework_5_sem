@@ -9,7 +9,12 @@ void Stack::push(int x){
 
 int Stack::pop(){
     int last_element=m_st[m_st.size()-1];
-    m_st.pop_back();
+    if (m_st.size()){
+        m_st.pop_back();
+    }
+    else {
+        std::cout<<"Невозможно удалить элемент, стэк пуст"<<'\n';
+    }
     return last_element;
     
 }

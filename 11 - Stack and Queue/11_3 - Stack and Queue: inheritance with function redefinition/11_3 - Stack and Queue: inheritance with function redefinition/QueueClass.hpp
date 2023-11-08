@@ -7,7 +7,7 @@
 #include <iostream>
 
 class Queue: public Stack{
-    public:
+public:
     void push(int);
     int pop();
 };
