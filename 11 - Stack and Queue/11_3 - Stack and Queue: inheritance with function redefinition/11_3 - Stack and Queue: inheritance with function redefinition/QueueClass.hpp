@@ -10,5 +10,9 @@ class Queue: public Stack{
 public:
     void push(int);
     int pop();
+    Queue(std::vector<int> x): Stack(x){
+    }
+    Queue(): Stack(){
+    }
 };
 #endif /* QueueClass_h */

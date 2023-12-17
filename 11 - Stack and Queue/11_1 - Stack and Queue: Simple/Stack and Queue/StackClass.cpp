@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include "StackClass.h"
 #include <vector>
@@ -18,3 +17,4 @@ int Stack::pop(){
     return last_element;
     
 }
+

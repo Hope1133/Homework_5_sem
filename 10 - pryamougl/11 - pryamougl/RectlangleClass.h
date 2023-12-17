@@ -4,6 +4,7 @@
 #define RectlangleClass_h
 
 class Rectlangle{
+private:
     int m_x_left_up;
     int m_y_left_up;
     int m_x_right_down;

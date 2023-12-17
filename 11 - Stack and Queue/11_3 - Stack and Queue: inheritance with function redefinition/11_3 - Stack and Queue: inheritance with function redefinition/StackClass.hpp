@@ -9,6 +9,11 @@ class Stack{
     public:
     virtual void push(int);
     virtual int pop();
+    
+    Stack(std::vector<int> x): m_vec(x){
+    }
+    Stack(){
+    }
 };
 
 #endif /* StackClass_h */

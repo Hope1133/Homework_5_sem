@@ -2,12 +2,12 @@
 #define BasicClass_hpp
 
 #include <stdio.h>
-#include"BasicClass.hpp"
 #include <vector>
+
+// В интерфейсе (базовом классе) нельзя задавать ничего кроме методов, желательно чистых(=0), голые правила, без переменных, без конструкторов
 
 class Basic{
     public:
-    std::vector<int> m;
     virtual void push(int)=0;
     virtual int pop()=0;
 };

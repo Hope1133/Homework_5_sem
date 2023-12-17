@@ -2,6 +2,8 @@
 #include "StackClass.h"
 #include "QueueClass.h"
 
+//Здесь реализованы разные инициализации Стэка
+
 int main() {
     Stack st;
     Queue q;
@@ -22,6 +24,28 @@ int main() {
     for (int i=0; i<st.m_st.size(); i++){
         std::cout<<st.m_st[i]<<' ';
     }
+    std::cout<<'\n';
     
-    return 0;
+    std::vector a={1, 2, 3};
+    
+    Stack st1(a);
+    for (int i=0; i<st1.m_st.size(); i++){
+        std::cout<<st1.m_st[i]<<' ';
+    }
+    std::cout<<'\n';
+    
+    Stack st2 ({1, 2, 3});
+    for (int i=0; i<st2.m_st.size(); i++){
+        std::cout<<st2.m_st[i]<<' ';
+    }
+    std::cout<<'\n';
+    
+//    Stack st3 (3, 1, 2, 3);
+//    for (int i=0; i<st3.m_st.size(); i++){
+//        std::cout<<st3.m_st[i]<<' ';
+//    }
+//    std::cout<<'\n';
+//    return 0;
 }
+    
+

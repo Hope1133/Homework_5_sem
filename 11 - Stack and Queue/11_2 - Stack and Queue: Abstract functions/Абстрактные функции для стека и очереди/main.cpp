@@ -23,6 +23,21 @@ int main() {
     for (int i=0; i<st.m.size(); i++){
         std::cout<<st.m[i]<<' ';
     }
+    std::cout<<'\n';
+    
+    
+    std::vector a={1, 2, 3};
+    Stack st1(a);
+    for (int i=0; i<st1.m.size(); i++){
+        std::cout<<st1.m[i]<<' ';
+    }
+    std::cout<<'\n';
+    
+    Stack st2 ({1, 2, 3});
+    for (int i=0; i<st2.m.size(); i++){
+        std::cout<<st2.m[i]<<' ';
+    }
+    std::cout<<'\n';
     
     return 0;
 }

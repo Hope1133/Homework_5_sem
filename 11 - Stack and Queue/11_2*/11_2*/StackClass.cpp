@@ -1,0 +1,22 @@
+// Hаследование обоих классов от класса, инкапсулирующего вектор с данными, который, в свою очередь, наследуется от интерфейса.
+
+#include <vector>
+#include <iostream>
+#include "DataClass.hpp"
+#include "StackClass.hpp"
+
+void Stack::push(int x){
+    m.push_back(x);
+}
+
+int Stack::pop(){
+    int last_element=m[m.size()-1];
+    if (m.size()){
+        m.pop_back();
+    }
+    else {
+        std::cout<<"Невозможно удалить элемент, стэк пуст"<<'\n';
+    }
+    return last_element;
+    
+}
